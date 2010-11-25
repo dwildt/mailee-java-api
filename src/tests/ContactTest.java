@@ -26,7 +26,7 @@ public class ContactTest {
 
 	@Test
 	public void testContactGet() throws Exception {
-		Request request = new Request(Method.GET, "http://api.key_goes_here.diogobiazus.mailee.me/contacts");
+		Request request = new Request(Method.GET, "http://api.33be075a32df5.unittests.mailee.me/contacts");
 		// Indicates the client preferences and let the server handle the best representation with content negotiation.
 		request.getClientInfo().getAcceptedMediaTypes().add(new Preference<MediaType>(MediaType.APPLICATION_JSON));
 		Response response = new Response(request);
