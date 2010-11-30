@@ -26,7 +26,6 @@ public class ContactTest {
 
 	@Test
 	public void basicOperations() throws Exception {
-		System.out.println("TESTE");
 		p = f.instantiate();
 		assertNull(p.getId());
 		p.setName("Monty Python");

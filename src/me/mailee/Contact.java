@@ -43,6 +43,7 @@ public class Contact extends ActiveResource {
     private Integer skoobConnections;
     private Integer twitterFollowers;
     private Date deletedAt;
+
 	public String getId() {
 		return id;
 	}
