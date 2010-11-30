@@ -21,6 +21,5 @@ public class MaileeTest {
 	@Test
 	public void getContacts() throws Exception {
 		Mailee.setApiURI("unittests", "33be075a32df5");
-		Mailee.getContacts(Mailee.ALL);
 	}
 }
