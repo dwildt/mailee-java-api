@@ -1,24 +1,64 @@
 package me.mailee;
 
+import java.io.IOException;
+import java.util.Date;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.restlet.Client;
+import org.restlet.Request;
+import org.restlet.Response;
+import org.restlet.data.MediaType;
+import org.restlet.data.Method;
+import org.restlet.data.Preference;
+import org.restlet.ext.json.JsonRepresentation;
 
-public class Contact {
-	private JSONObject json = null;
+import org.jactiveresource.*;
 
-	public Contact(String jsonSource) throws JSONException {
-		json = new JSONObject(jsonSource);
-	}
+public class Contact extends ActiveResource {
+    private String id;
+    private String name;
+    private Date birthdate;
+    private Date createdOn;
+    private Date updatedOn;
 
-	public JSONObject getJSON() {
-		return json;
-	}
-	public Contact set(String key, String value) throws JSONException {
-		json.put(key, value);
-		return this;
-	}
+    public String getId() {
+        return id;
+    }
 
-	public String get(String key) {
-		return json.optString(key);
-	}	
+    public void setId( String id ) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName( String name ) {
+        this.name = name;
+    }
+
+    public Date getBirthdate() {
+        return birthdate;
+    }
+
+    public void setBirthdate( Date birthdate ) {
+        this.birthdate = birthdate;
+    }
+
+    public Date getCreatedOn() {
+        return createdOn;
+    }
+
+    public void setCreatedOn( Date createdOn ) {
+        this.createdOn = createdOn;
+    }
+
+    public Date getUpdatedOn() {
+        return updatedOn;
+    }
+
+    public void setUpdatedOn( Date updatedOn ) {
+        this.updatedOn = updatedOn;
+    }
 }
