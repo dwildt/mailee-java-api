@@ -17,9 +17,10 @@ public class MaileeTest {
 		Mailee.setApiURI("unittests", "33be075a32df5");
 		assertEquals("http://api.33be075a32df5.unittests.mailee.me/contacts", Mailee.getApiURI());
 	}
+
 	@Test
-	public void getContactList() throws Exception {
+	public void getContacts() throws Exception {
 		Mailee.setApiURI("unittests", "33be075a32df5");
-		Mailee.getContactList(Mailee.ALL);
+		Mailee.getContacts(Mailee.ALL);
 	}
 }
