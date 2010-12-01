@@ -22,7 +22,7 @@
 
 ### Compatibilidade
 
-  Utilizamos biblioteca jactiveresource [[http://jactiveresource.org/]]  
+  Utilizamos biblioteca [jactiveresource](http://jactiveresource.org/ "jactiveresource.org")  
   Só foram feitos testes com o Java 6, caso tenha interesse em fazer a biblioteca funcionar em uma versão mais antiga entre em contato.
 
 ## Uso
