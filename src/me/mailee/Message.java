@@ -2,6 +2,7 @@ package me.mailee;
 
 import org.jactiveresource.ActiveResource;
 import java.util.Date;
+import java.util.HashMap;
 
 public class Message extends ActiveResource {
 	private String id;
@@ -34,6 +35,7 @@ public class Message extends ActiveResource {
 	private Date thumbUpdatedAt;
 	private Integer total;
 	private String url;
+	private Object edit; 
 
 	public void setId(String id) {
 		this.id = id;
@@ -274,5 +276,13 @@ public class Message extends ActiveResource {
 
 	public void setUrl(String url) {
 		this.url = url;
+	}
+
+	public void setEdit(Object edit) {
+		this.edit = edit;
+	}
+
+	public Object getEdit() {
+		return edit;
 	}
 }
